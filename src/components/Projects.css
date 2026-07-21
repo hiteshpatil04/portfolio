@@ -1,0 +1,155 @@
+.project-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.filter-btn {
+  padding: 9px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  border-color: var(--blue);
+}
+
+.filter-btn.active {
+  background: var(--gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.project-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-strong);
+}
+
+.project-thumb {
+  height: 140px;
+  background: var(--gradient-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-thumb span {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-body {
+  padding: 26px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-badge {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--purple);
+  border: 1px solid rgba(148, 87, 255, 0.4);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.project-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.project-subtitle {
+  color: var(--blue);
+  font-size: 0.86rem;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.project-desc {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.project-features {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.project-features li {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  padding-left: 18px;
+  position: relative;
+}
+
+.project-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gradient);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links .btn {
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  flex: 1;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

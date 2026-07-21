@@ -1,0 +1,73 @@
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.achievement-card {
+  padding: 30px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-strong);
+}
+
+.achievement-stat {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.achievement-label {
+  color: var(--text-dim);
+  font-size: 0.84rem;
+}
+
+@media (max-width: 900px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leetcode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-dim);
+  transition: all 0.2s ease;
+  margin-top: 6px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.leetcode-btn svg {
+  font-size: 0.85rem;
+}
+
+.leetcode-btn:hover {
+  color: #fff;
+  border-color: var(--blue);
+  background: rgba(79, 124, 255, 0.05);
+}

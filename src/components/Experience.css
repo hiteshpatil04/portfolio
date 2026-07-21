@@ -1,0 +1,127 @@
+.exp-timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 32px;
+  border-left: 1px solid var(--border-strong);
+}
+
+.exp-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.exp-dot {
+  position: absolute;
+  left: -37px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: 0 0 0 4px rgba(148, 87, 255, 0.15);
+}
+
+.exp-card {
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exp-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.exp-badge {
+  font-size: 0.78rem;
+  color: var(--purple);
+  background: rgba(148, 87, 255, 0.08);
+  border: 1px solid rgba(148, 87, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.exp-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.exp-company {
+  font-size: 1.02rem;
+  color: var(--blue);
+  font-weight: 600;
+  margin: -4px 0 0;
+}
+
+.exp-project {
+  font-size: 0.94rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  margin: 4px 0;
+}
+
+.exp-desc {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.exp-actions {
+  display: flex;
+  margin-top: 8px;
+}
+
+.exp-cert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-dim);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.exp-cert-btn svg {
+  font-size: 0.95rem;
+}
+
+.exp-cert-btn:hover {
+  color: var(--text);
+  border-color: var(--blue);
+  background: rgba(79, 124, 255, 0.05);
+}

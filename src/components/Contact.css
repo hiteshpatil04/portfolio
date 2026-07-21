@@ -1,0 +1,43 @@
+.contact-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.02rem;
+  color: var(--text-dim);
+  transition: all 0.25s ease;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.contact-row svg {
+  font-size: 1.25rem;
+  color: var(--blue);
+  transition: transform 0.25s ease;
+}
+
+.contact-row:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-row:hover svg {
+  transform: scale(1.1);
+}

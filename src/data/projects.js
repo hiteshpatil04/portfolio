@@ -1,0 +1,80 @@
+export const projects = [
+  {
+    id: "vc-analyst",
+    title: "Multi-Agent VC Analyst",
+    subtitle: "AI-Powered Startup Investment Analysis Platform",
+    description:
+      "A multi-agent AI platform that automatically analyzes startup pitch decks, running specialized agents for market analysis, financial evaluation, team assessment, risk analysis, and investment recommendations — turning a manual due-diligence process into minutes of automated insight.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "ChromaDB",
+      "PostgreSQL",
+      "Docker",
+      "Gemini/OpenAI API",
+    ],
+    features: [
+      "Multi-agent pipeline for market, financial, team & risk analysis",
+      "Automated pitch deck parsing and structured extraction",
+      "RAG-powered comparison against market & competitor data",
+      "Generates investment-ready recommendation reports",
+    ],
+    github: "#",
+    demo: "#",
+    featured: true,
+  },
+  {
+    id: "codesage-ai",
+    title: "CodeSage AI",
+    subtitle: "Multi-Agent AI Code Review Platform",
+    description:
+      "An AI-powered code review platform that uses a multi-agent architecture to detect bugs, security vulnerabilities, performance issues, code smells and documentation gaps, with a repository-aware RAG chat for semantic code search.",
+    tech: ["Python", "FastAPI", "React.js", "LangGraph", "ChromaDB"],
+    features: [
+      "Specialized agents for bugs, security, performance & code quality",
+      "RAG pipeline over the codebase using Sentence Transformers",
+      "Automated code indexing of full GitHub repositories",
+      "Interactive dashboard with quality scores & recommendations",
+    ],
+    github: "#",
+    demo: "#",
+    featured: true,
+  },
+  {
+    id: "lifelinezero",
+    title: "LifeLineZero",
+    subtitle: "AI-Powered Pre-Disaster Management & Emergency Response",
+    description:
+      "A disaster management platform combining AI severity prediction, multilingual alerts, rescue coordination, emergency reporting and evacuation planning to support civilians and rescue authorities before and during a crisis.",
+    tech: ["Node.js", "Express.js", "MongoDB", "Three.js", "AI/ML"],
+    features: [
+      "AI-based disaster severity prediction & risk assessment",
+      "SOS Beacon tracking and Rescue Command Dashboard",
+      "Multilingual emergency alerts & offline survival mode",
+      "2D-to-3D building visualization for rescue planning",
+    ],
+    github: "#",
+    demo: "#",
+    featured: true,
+  },
+  {
+    id: "ev-battery-tracker",
+    title: "EV Battery Tracking & Disposal Platform",
+    subtitle: "Industry Project with Electrovent LLP | Developer: Hitesh Patil",
+    description:
+      "A full-stack lifecycle management system that tracks EV batteries from manufacturing through usage to final recycling — monitoring battery health, ownership transfer and responsible disposal with complete audit traceability.",
+    tech: ["Node.js", "Express.js", "MySQL", "JWT", "RBAC"],
+    features: [
+      "Role-based access for manufacturers, owners, recyclers & admins",
+      "Full battery lifecycle & ownership transfer tracking",
+      "Audit logging for status changes and recycling activity",
+      "RESTful APIs for lifecycle-stage management",
+    ],
+    github: "#",
+    demo: "#",
+    featured: true,
+  },
+];

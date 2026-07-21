@@ -1,0 +1,39 @@
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  border-radius: 50%;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--blue);
+  margin: -3px 0 0 -3px;
+}
+
+.cursor-ring {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-strong);
+  margin: -17px 0 0 -17px;
+  transition: width 0.2s, height 0.2s, margin 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.cursor-ring.is-active {
+  width: 54px;
+  height: 54px;
+  margin: -27px 0 0 -27px;
+  border-color: var(--purple);
+  background: rgba(148, 87, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
