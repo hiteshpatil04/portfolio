@@ -41,3 +41,19 @@
 .contact-row:hover svg {
   transform: scale(1.1);
 }
+
+.accent-row {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: rgba(124, 58, 237, 0.25);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.accent-row svg {
+  color: var(--purple-light);
+}
+
+.accent-row:hover {
+  background: rgba(124, 58, 237, 0.16);
+  border-color: rgba(124, 58, 237, 0.45);
+}

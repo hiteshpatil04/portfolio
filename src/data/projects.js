@@ -77,4 +77,31 @@ export const projects = [
     demo: "#",
     featured: true,
   },
+  {
+    id: "securevault",
+    title: "SecureVault",
+    subtitle: "Real-Time Banking Fraud Detection & Prevention System",
+    description:
+      "SecureVault is a real-time banking fraud detection and prevention platform built around a three-layer security architecture — JWT authentication, blockchain-secured payments, and an ML-driven anomaly detection engine. The system runs 8 parallel detection checks per transaction (velocity, device fingerprint, IP reputation, impossible travel, behavioral biometrics, amount anomaly, new-location, and replay-attack detection) and combines them into a composite fraud risk score using an Isolation Forest model with sub-100ms inference latency. Three role-based dashboards — User, Gateway Admin, and Bank Officer — sync in real time via Socket.io, giving each stakeholder live visibility into transactions, fraud alerts, and investigation tools.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "Python FastAPI",
+      "Scikit-learn",
+      "JWT",
+      "Blockchain",
+    ],
+    features: [
+      "Three-layer defense: JWT, Blockchain-secured payments & ML anomaly engine",
+      "8 parallel real-time detection checks with sub-100ms inference latency",
+      "Composite risk scoring via Isolation Forest machine learning model",
+      "Live role-based dashboards for User, Gateway Admin & Bank Officer via Socket.io",
+    ],
+    github: "#",
+    demo: "#",
+    featured: true,
+  },
 ];

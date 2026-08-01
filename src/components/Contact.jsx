@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiDownload } from "react-icons/fi";
 import { socials } from "../data/misc";
 import "./Contact.css";
 
@@ -42,6 +42,9 @@ export default function Contact() {
             </a>
             <a href={socials.github} target="_blank" rel="noreferrer" className="contact-row cursor-hover">
               <FiGithub /> GitHub
+            </a>
+            <a href="/resume.pdf" download="Hitesh_Patil_Resume_offcam_soft.pdf" target="_blank" rel="noreferrer" className="contact-row cursor-hover accent-row">
+              <FiDownload /> Download Resume
             </a>
           </motion.div>
         </div>

@@ -49,6 +49,12 @@
   color: var(--text);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .nav-cta {
   padding: 10px 22px;
   font-size: 0.88rem;
@@ -64,13 +70,16 @@
 }
 
 @media (max-width: 900px) {
+
   .nav-links,
   .nav-cta {
     display: none;
   }
+
   .nav-toggle {
     display: block;
   }
+
   .nav-mobile {
     overflow: hidden;
     display: flex;
@@ -78,9 +87,15 @@
     background: rgba(5, 7, 13, 0.96);
     border-top: 1px solid var(--border);
   }
+
   .nav-mobile a {
     padding: 16px 24px;
     border-bottom: 1px solid var(--border);
     color: var(--text-dim);
+  }
+
+  .nav-mobile-resume {
+    color: var(--purple-light) !important;
+    font-weight: 600;
   }
 }

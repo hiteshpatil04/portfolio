@@ -19,6 +19,8 @@ function matchesFilter(project, filter) {
         "ChromaDB",
         "AI/ML",
         "Gemini/OpenAI API",
+        "Scikit-learn",
+        "Python FastAPI",
       ].includes(t)
     );
 
@@ -64,9 +66,8 @@ export default function Projects() {
           {FILTERS.map((f) => (
             <button
               key={f}
-              className={`filter-btn cursor-hover ${
-                filter === f ? "active" : ""
-              }`}
+              className={`filter-btn cursor-hover ${filter === f ? "active" : ""
+                }`}
               onClick={() => setFilter(f)}
             >
               {f}

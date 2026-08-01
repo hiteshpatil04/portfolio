@@ -12,7 +12,7 @@ export const skillCategories = [
   {
     title: "Backend Knowledge",
     icon: "server",
-    skills: ["FastAPI", "Node.js", "Express.js"],
+    skills: ["FastAPI", "Node.js", "Express.js", "Socket.io"],
   },
   {
     title: "Artificial Intelligence",
@@ -32,7 +32,7 @@ export const skillCategories = [
   {
     title: "Databases",
     icon: "database",
-    skills: ["MySQL", "PostgreSQL", "Firebase", "ChromaDB"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "ChromaDB"],
   },
   {
     title: "Tools",

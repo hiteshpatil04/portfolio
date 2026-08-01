@@ -1,5 +1,5 @@
 export const achievements = [
-  { stat: "230+", label: "LeetCode Problems Solved" },
+  { stat: "250+", label: "LeetCode Problems Solved" },
   { stat: "10+", label: "Hackathons Participated" },
   { stat: "SIH", label: "Smart India Hackathon Finalist" },
   { stat: "1", label: "Industry Project — Electrovent LLP" },

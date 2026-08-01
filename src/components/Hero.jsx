@@ -101,7 +101,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.7 }}
           >
-            <a href="/resume.pdf" download className="btn btn-primary cursor-hover">
+            <a href="/resume.pdf" download="Hitesh_Patil_Resume_offcam_soft.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary cursor-hover">
               Download Resume
             </a>
             <a href="#projects" className="btn btn-outline cursor-hover">

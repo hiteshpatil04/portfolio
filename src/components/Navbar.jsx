@@ -38,13 +38,24 @@ export default function Navbar() {
         </nav>
 
 
-        <button
-          className="nav-toggle cursor-hover"
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          {open ? <FiX /> : <FiMenu />}
-        </button>
+        <div className="nav-actions">
+          <a
+            href="/resume.pdf"
+            download="Hitesh_Patil_Resume_offcam_soft.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline nav-cta cursor-hover"
+          >
+            Resume
+          </a>
+          <button
+            className="nav-toggle cursor-hover"
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Toggle menu"
+          >
+            {open ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -61,6 +72,16 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              download="Hitesh_Patil_Resume_offcam_soft.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="nav-mobile-resume"
+            >
+              Download Resume
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
